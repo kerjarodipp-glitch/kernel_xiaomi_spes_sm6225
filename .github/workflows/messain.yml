@@ -63,7 +63,7 @@ jobs:
             | base64 --decode > "$MKDTBO_PATH"
           chmod +x "$MKDTBO_PATH"
 
-          curl -LSs "https://raw.githubusercontent.com/SukiSU-Ultra/SukiSU-Ultra/main/kernel/setup.sh" | bash -s susfs-main
+          curl -LSs "https://raw.githubusercontent.com/SukiSU-Ultra/SukiSU-Ultra/main/kernel/setup.sh" | bash -s builtin
           
       - name: Clean previous build (full clean)
         run: |
